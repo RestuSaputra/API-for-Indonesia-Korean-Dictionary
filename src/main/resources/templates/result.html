@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Quiz Result</title>
+</head>
+<body>
+<h1>Quiz Result</h1>
+<p>Score: <span th:text="${result.score}"></span></p>
+<p>Date: <span th:text="${result.timestamp}"></span></p>
+<h2>Next Steps</h2>
+<div th:each="step : ${steps}">
+    <p th:text="${step.description}"></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="kamusApp">
+    <head>
+        <title>Login</title>
+    </head>
+    <body ng-controller="AuthController as authCtrl">
+        <h2>Login</h2>
+        <form ng-submit="authCtrl.login()">
+            <label for="username">Username: </label>
+            <input type="text" id="username" ng-model="authCtrl.credentials.username" required>
+            <label for="userPassword">Password</label>
+            <input type="password" id="userPassword" ng-model="authCtrl.credentials.userPassword" required>
+            <button type="submit">Login</button>
+            <p ng-show="authCtrl.error">{{ authCtrl.error }}</p>
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
